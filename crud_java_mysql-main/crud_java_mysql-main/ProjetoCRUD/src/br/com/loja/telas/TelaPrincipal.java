@@ -6,6 +6,7 @@
 package br.com.loja.telas;
 
 import java.text.DateFormat;
+import java.util.Date;
 
 /**
  *
@@ -155,6 +156,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
       Date data_atual = new Date();
       DateFormat formatador = DateFormat.getDateInstance(DateFormat.SHORT);
+      lblData.setText(formatador.format(data_atual));
     }//GEN-LAST:event_formWindowActivated
 
     /**

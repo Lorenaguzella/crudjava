@@ -21,11 +21,14 @@ public class TelaLogin extends javax.swing.JFrame {
             
             rs = pst.executeQuery();
             
+            
             if (rs.next()){
                 //abre a tela principal
                 //JOptionPane.showMessageDialog(null, "ESTOU ABRINDO A TELA PRINCIPAL");
                 TelaPrincipal principal = new TelaPrincipal();
                 principal.setVisible(true);
+                this.dispose();
+                conexao.close();
                 
                 
             }else{
